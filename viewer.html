@@ -1,1 +1,17 @@
-<div id="toolbarContainer" class="toolbar" style="display: none;"></div>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Minimal PDF Viewer</title>
+  <style>
+    html, body { margin: 0; height: 100%; }
+    #pdfViewer { width: 100%; height: 100vh; border: none; }
+  </style>
+</head>
+<body>
+  <iframe id="pdfViewer"
+    src="https://mozilla.github.io/pdf.js/web/viewer.html?file=../The%20Intelligent%20Investor%20Bahasa%20Indonesia%20(Benjamin%20Graham).pdf"
+    allowfullscreen>
+  </iframe>
+</body>
+</html>
