@@ -2,12 +2,16 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>PDF Viewer</title>
+  <title>PDF.js Viewer</title>
+  <style>
+    html, body { margin: 0; padding: 0; height: 100%; }
+    #viewer { width: 100%; height: 100vh; }
+  </style>
 </head>
-<body style="margin:0">
-  <iframe 
-    src="web/viewer.html?file=The%20Intelligent%20Investor%20Bahasa%20Indonesia%20%28Benjamin%20Graham%29.pdf" 
-    width="100%" height="100%" style="border:none;position:fixed;top:0;left:0;bottom:0;right:0">
+<body>
+  <iframe id="viewer"
+    src="web/viewer.html?file=The%20Intelligent%20Investor%20Bahasa%20Indonesia%20(Benjamin%20Graham).pdf"
+    width="100%" height="100%" style="border: none;">
   </iframe>
 </body>
 </html>

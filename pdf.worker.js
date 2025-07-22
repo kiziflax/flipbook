@@ -1,2 +1,1 @@
-
-// Dummy worker for basic PDF.js functionality
+// pdf.worker.js file placeholder
