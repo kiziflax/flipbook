@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8"/>
-  <title>Minimal PDF Viewer</title>
+  <meta charset="utf-8">
+  <title>PDF.js Viewer (No Toolbar)</title>
+  <link rel="stylesheet" href="viewer.css"/>
   <style>
-    html, body { margin: 0; height: 100%; }
-    #pdfViewer { width: 100%; height: 100vh; border: none; }
+    #toolbarContainer, .toolbar { display: none !important; }
+    #viewerContainer { top: 0 !important; }
   </style>
 </head>
 <body>
-  <iframe id="pdfViewer"
-    src="https://mozilla.github.io/pdf.js/web/viewer.html?file=../The%20Intelligent%20Investor%20Bahasa%20Indonesia%20(Benjamin%20Graham).pdf"
-    allowfullscreen>
-  </iframe>
+  <div id="viewerContainer">
+    <iframe src="https://kiziflax.github.io/flipbook/The%20Intelligent%20Investor%20Bahasa%20Indonesia%20(Benjamin%20Graham).pdf" width="100%" height="100%" frameborder="0"></iframe>
+  </div>
 </body>
 </html>
